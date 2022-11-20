@@ -1,8 +1,8 @@
 const express = require('express');
 const { graphqlHTTP } = require('express-graphql')
 const app = express();
-const schema = require('./schema')
-const resolvers = require('./resolvers')
+const schema = require('./data/schema')
+const resolvers = require('./data/resolvers')
 app.get('/', (req, res) => {
     res.send('graphql is awesome')
 })
